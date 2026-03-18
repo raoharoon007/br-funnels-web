@@ -4,7 +4,7 @@ import Image from 'next/image';
 const riskItems = [
     { icon: '/assets/icons/check.svg', title: '100% Transparent Reporting', text: 'Real-time access to all metrics and campaign performance' },
     { icon: '/assets/icons/Performance-icon3.svg', title: 'Dedicated Account Manager', text: 'Direct line to your strategic partner, not a ticket system' },
-    { icon: '/assets/icons/shield.svg', title: '30-Day Performance Commitment', text: 'See measurable improvements or we work until you do' },
+    { icon: '/assets/icons/Shield.svg', title: '30-Day Performance Commitment', text: 'See measurable improvements or we work until you do' },
     { icon: '/assets/icons/Delivery.svg', title: 'SLA-Based Delivery Framework', text: 'Guaranteed response times and milestone commitments' },
 ];
 
@@ -15,7 +15,7 @@ const Riskfree = () => {
             <div className="relative mx-auto w-full  p-4 sm:p-6 md:p-8">
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
                     <div className="rounded-[17px] bg-gradient-main p-4">
-                        <Image src="/assets/icons/shield.svg" alt="Guarantee" width={24} height={24} className="text-white" />
+                        <Image src="/assets/icons/Shield.svg" alt="Guarantee" width={24} height={24} className="text-white" />
                     </div>
                     <h2 className="mt-5 text-3xl font-semibold text-background sm:text-[32px]">Results Backed by Performance Guarantee</h2>
                     <p className="mt-2 text-base text-primary sm:text-lg font-normal">Your growth is our commitment. We stand behind every campaign.</p>

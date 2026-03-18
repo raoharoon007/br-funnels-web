@@ -2,11 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 
 const steps = [
-    { icon: '/assets/icons/search.svg', title: 'Audit & Analysis', desc: 'Deep dive into your current email performance and revenue opportunities' },
+    { icon: '/assets/icons/Search.svg', title: 'Audit & Analysis', desc: 'Deep dive into your current email performance and revenue opportunities' },
     { icon: '/assets/icons/mapping.svg', title: 'Strategy Mapping', desc: 'Custom funnel architecture designed for your business model' },
     { icon: '/assets/icons/flows.svg', title: 'Build Core Flows', desc: 'High-converting automated flows that drive revenue on autopilot' },
     { icon: '/assets/icons/Setting.svg', title: 'Monthly Email Campaigns', desc: 'Strategic campaigns designed to boost engagement and sales' },
-    { icon: '/assets/icons/performance-icon2.svg', title: 'Monthly Reporting', desc: 'Clear performance insights with ongoing optimization' },
+    { icon: '/assets/icons/Performance-icon2.svg', title: 'Monthly Reporting', desc: 'Clear performance insights with ongoing optimization' },
 ];
 
 const Revenue = () => {
