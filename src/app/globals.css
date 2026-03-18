@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
+/* =========================
+   Root Design Tokens
+========================= */
+
 :root {
+  --bodybg:#0B0F1A;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #e4e4e4;
+  --primary: #b9b9b9;
+
+  /* gradients */
+  --gradient-color: #793FEE;
+
+  --gradient-main: linear-gradient(180deg, #793fee 0%, #26fdfe 100%);
+  --gradient-purplish: linear-gradient(180deg, #2563eb 0%, #7c3aed 100%);
+  --gradient-icons-bg: linear-gradient(135deg,
+      rgba(37, 99, 235, 0.2) 0%,
+      rgba(124, 58, 237, 0.2) 100%);
+  --gradient-horizontal: linear-gradient(90deg, #793FEE 0.05%, #26FDFE 133.43%);
 }
+
+/* =========================
+   Tailwind Theme Mapping
+========================= */
 
 @theme inline {
+  /* fonts */
+  --font-poppins: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  /* colors */
+  --color-bodybg: var(--bodybg);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+
+  /* gradients */
+  --color-gradient: var(--gradient-color);
+  --gradient-main: var(--gradient-main);
+  --gradient-purplish: var(--gradient-purplish);
+  --gradient-icons-bg: var(--gradient-icons-bg);
+  --gradient-horizontal: var(--gradient-horizontal);
+
+  /* breakpoints */
+  --breakpoint-sm: 510px;
+  --breakpoint-md: 768px;
+  --breakpoint-md2: 992px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* =========================
+   Base styles
+========================= */
 
 body {
-  background: var(--background);
+  background: var(--bodybg);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
 }
+
+/* =========================
+   Custom Utilities
+========================= */
+
+@utility text-gradient-main {
+  background: linear-gradient(180deg, #793FEE 0%, #26FDFE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@utility bg-gradient-horizontal {
+  background: var(--gradient-horizontal);
+}
+
+@utility bg-gradient-main {
+  background: linear-gradient(180deg, #793FEE 0%, #26FDFE 100%);
+}
+@utility bg-gradient-purplish {
+  background: linear-gradient(180deg, #2563eb 0%, #7c3aed 100%);
+}
+@utility bg-gradient-icons-bg {
+  background:linear-gradient(135deg,
+      rgba(37, 99, 235, 0.2) 0%,
+      rgba(124, 58, 237, 0.2) 100%);
+}
+
