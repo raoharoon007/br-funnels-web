@@ -12,7 +12,6 @@ const Riskfree = () => {
     return (
         <section className="relative overflow-hidden mx-auto w-full  px-4 py-14 sm:py-20">
             
-            {/* --- Right Top Glow Effect --- */}
             <div 
                 className="absolute -right-[15%] -top-[10%] w-100 h-100 bg-gradient-main rounded-full opacity-30 blur-[120px] pointer-events-none z-0"
             />
@@ -20,7 +19,7 @@ const Riskfree = () => {
             <div className="relative max-w-6xl z-10 mx-auto w-full ">
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
                     <div className="rounded-[17px] bg-gradient-main p-4 shadow-[0_0_20px_rgba(121,63,238,0.4)]">
-                        <Image src="/assets/icons/Shield.svg" alt="Guarantee" width={24} height={24} className="text-white" />
+                        <Image src="/assets/icons/Shield.svg" alt="Guarantee" width={24} height={24} priority />
                     </div>
                     <h2 className="mt-5 text-3xl font-semibold text-background sm:text-[32px]">Results Backed by Performance Guarantee</h2>
                     <p className="mt-2 text-base text-primary sm:text-lg font-normal">Your growth is our commitment. We stand behind every campaign.</p>
@@ -31,7 +30,7 @@ const Riskfree = () => {
                         <div key={idx} className="rounded-[17px] border border-white/10 bg-white/5 p-4 sm:p-[29.07px] backdrop-blur-sm">
                             <div className="flex items-start gap-3">
                                 <div className="mt-1 shrink-0 rounded-xl border-[0.88px] border-[#793FEE] bg-[linear-gradient(135deg,rgba(37,99,235,0.20)_0%,rgba(124,58,237,0.20)_100%)] p-4">
-                                    <Image src={item.icon} alt={item.title} width={24} height={24} />
+                                    <Image src={item.icon} alt={item.title} width={24} height={24} priority />
                                 </div>
                                 <div>
                                     <h3 className="text-[17px] font-semibold text-background">{item.title}</h3>

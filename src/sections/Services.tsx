@@ -37,16 +37,16 @@ const Services = () => {
 
                             <div className="flex flex-col items-start gap-3">
                                 <div className="rounded-xl bg-[linear-gradient(180deg,#2563EB_0%,#7C3AED_100%)] shadow-[0_0_26.409px_0_rgba(124,58,237,0.30)] p-4">
-                                    <Image src={item.icon} alt={item.title} width={28} height={28} />
+                                    <Image src={item.icon} alt={item.title} width={28} height={28} priority />
                                 </div>
                                 <div>
                                     <h3 className="text-[21px] max-w-70 font-semibold text-background">{item.title}</h3>
                                 </div>
                             </div>
                             <p className="mt-3 text-sm max-w-90 text-primary font-medium">{item.description}</p>
-                            <button className="mt-4 flex flex-row items-center gap-1.5 text-sm font-semibold text-gradient-main cursor-pointer">
+                            <button className="mt-4 cursor-pointer flex flex-row items-center gap-1.5 text-sm font-semibold text-gradient-main">
                                 {item.cta}
-                                <Image src="/assets/icons/purple-arrow.svg" alt="Arrow" width={20} height={20}  />
+                                <Image src="/assets/icons/purple-arrow.svg" alt="Arrow" width={20} height={20} priority  />
                             </button>
                         </div>
                     ))}

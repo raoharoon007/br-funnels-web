@@ -21,7 +21,7 @@ const Performance = () => {
                     {stats.map((item) => (
                         <div key={item.label} className="rounded-2xl border border-white/20 bg-[linear-gradient(135deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0)_100%)] p-4 text-left">
                             <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[linear-gradient(135deg,rgba(37,99,235,0.20)_0%,rgba(124,58,237,0.20)_100%)]">
-                                <Image src={item.icon} alt={item.label} width={20} height={20} />
+                                <Image src={item.icon} alt={item.label} width={20} height={20} priority/>
                             </div>
                             <div className="mt-3 text-3xl font-bold text-gradient-main">{item.value}</div>
                             <div className="mt-1 text-sm font-medium text-primary">{item.label}</div>

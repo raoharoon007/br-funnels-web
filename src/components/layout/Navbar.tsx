@@ -47,7 +47,7 @@ const Navbar = () => {
                      rounded-[10px] bg-gradient-horizontal
                      text-background text-sm sm:text-base md:text-lg font-medium"
         >
-          <Image src="/assets/icons/Phone.svg" alt="Send" width={16} height={16} />
+          <Image src="/assets/icons/Phone.svg" alt="Send" width={16} height={16} priority/>
           Book a Call
         </Link>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center gap-2 px-6 py-[13.5px] rounded-[10px] bg-gradient-horizontal text-background text-sm sm:text-base md:text-lg font-medium"
               onClick={() => setMenuOpen(false)}
             >
-              <Image src="/assets/icons/Phone.svg" alt="Send" width={18} height={18} />
+              <Image src="/assets/icons/Phone.svg" alt="Send" width={18} height={18} priority />
               Book a Call
             </Link>
           </li>

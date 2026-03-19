@@ -90,14 +90,14 @@ export default function CalendarPicker() {
           onClick={prevMonth}
           className="w-9 h-9 flex items-center justify-center rounded-md border-[0.502px] border-white/10 bg-white/5 cursor-pointer "
         >
-          <Image src="/assets/icons/left-arrow.svg" alt="avatar" width={20} height={20} className="object-cover" />
+          <Image src="/assets/icons/left-arrow.svg" alt="avatar" width={20} height={20} className="object-cover" priority />
         </button>
         <span className="text-[14px] text-background font-medium">{MONTHS[currentMonth]} {currentYear}</span>
         <button 
           onClick={nextMonth}
           className="w-9 h-9 flex items-center justify-center rounded-md border-[0.502px] border-white/10 bg-white/5 cursor-pointer"
         >
-          <Image src="/assets/icons/right-arrow.svg" alt="avatar" width={20} height={20} className="object-cover" />
+          <Image src="/assets/icons/right-arrow.svg" alt="avatar" width={20} height={20} className="object-cover" priority />
         </button>
       </div>
 
@@ -146,7 +146,7 @@ export default function CalendarPicker() {
           className="border-[0.502px] border-white/10 bg-white/5 rounded-[10px] p-3.5 flex items-center gap-2.5 cursor-pointer hover:border-[#333] transition-all"
         >
           <span className="text-[#666] shrink-0">
-            <Image src="/assets/icons/Timezone.svg" alt="avatar" width={20} height={20} className="object-cover" />
+            <Image src="/assets/icons/Timezone.svg" alt="avatar" width={20} height={20} className="object-cover" priority />
           </span>
           <div className="flex-1">
             <div className="text-[12px] text-[#6A7282] mb-0.5 tracking-tight">Time zone</div>

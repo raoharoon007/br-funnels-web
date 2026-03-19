@@ -26,7 +26,9 @@ const Revenue = () => {
                 <div className="relative grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-4">
                     {steps.map((step, idx) => (
                         <div key={idx} className="flex flex-col items-center group">
+
                             <div className="relative z-10 flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-gradient-purplish shadow-[0_0_40px_rgba(124,58,237,0.5)] ">
+
                                 <div className="absolute -top-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full  bg-gradient-main text-[11px] font-bold text-background shadow-md">
                                     {idx + 1}
                                 </div>
@@ -37,6 +39,7 @@ const Revenue = () => {
                                         alt="step icon"
                                         fill
                                         className="object-contain brightness-200"
+                                        priority
                                     />
                                 </div>
                             </div>
@@ -56,7 +59,7 @@ const Revenue = () => {
                 <button className="relative group px-8 py-4 rounded-2xl bg-gradient-horizontal cursor-pointer  ">
                     <span className="flex flex-row items-center gap-2 text-background font-semibold text-[10px] sm:text-base">
                         Apply This Framework to Your Brand
-                        <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={20} height={20} className="brightness-10 invert" />
+                        <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={20} height={20} className="brightness-10 invert" priority />
                     </span>
                 </button>
             </div>

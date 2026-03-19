@@ -39,7 +39,7 @@ const CallScheduling = () => {
 
                     <div className="flex items-center gap-3">
                         <div className="h-14 w-14 overflow-hidden rounded-full border border-white/10 bg-[#111827]">
-                            <Image src="/assets/icons/profile.svg" alt="avatar" width={56} height={56} className="object-cover" />
+                            <Image src="/assets/icons/profile.svg" alt="avatar" width={56} height={56} className="object-cover" priority />
                         </div>
                         <div className="flex flex-col">
                             <h2 className='text-[14px] font-normal text-[#99A1AF]'>BR Funnels</h2>
@@ -50,11 +50,11 @@ const CallScheduling = () => {
                     <div className="space-y-2 text-primary">
                         <h2 className='sm:text-[26px] text-base font-medium text-background'>Strategy Call</h2>
                         <div className="flex items-center gap-3 font-medium">
-                            <Image src="/assets/icons/clock.svg" alt="clock" width={30} height={30} className="opacity-60" />
+                            <Image src="/assets/icons/clock.svg" alt="clock" width={30} height={30} className="opacity-60" priority />
                             <span className='text-primary text-[14px] font-normal'>30 minutes</span>
                         </div>
                         <div className="flex items-center gap-3 font-medium leading-relaxed">
-                            <Image src="/assets/icons/recording.svg" alt="video" width={30} height={30} className="opacity-60" />
+                            <Image src="/assets/icons/recording.svg" alt="video" width={30} height={30} className="opacity-60" priority />
                             <span className='text-primary text-[14px] font-normal'>Web conferencing details provided upon confirmation.</span>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const CallScheduling = () => {
                             {details.map((item) => (
                                 <div key={item} className="flex items-center gap-4 group">
                                     <div className="mt-1 flex shrink-0 items-center justify-center rounded-full ">
-                                        <Image src="/assets/icons/goal.svg" alt="check" width={30} height={30} />
+                                        <Image src="/assets/icons/goal.svg" alt="check" width={30} height={30} priority />
                                     </div>
                                     <span className="text-[13px] font-medium text-primary">{item}</span>
                                 </div>
@@ -87,7 +87,7 @@ const CallScheduling = () => {
                     <div className="w-full max-w-170 mt-6">
                         <button className="w-full lg:w-auto  lg:ml-auto px-10 py-4 bg-gradient-horizontal cursor-pointer rounded-[14px] flex items-center justify-center gap-3 text-background font-semibold text-base ">
                             Schedule a Call
-                            <Image src="/assets/icons/Arrow.svg" alt="check" width={20} height={20} />
+                            <Image src="/assets/icons/Arrow.svg" alt="check" width={20} height={20} priority />
                         </button>
                     </div>
                 </div>

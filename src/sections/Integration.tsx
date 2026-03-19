@@ -17,7 +17,7 @@ const Integration = () => {
                 
                 <div className="mx-auto max-w-3xl text-center">
                     <div className="mb-5 inline-flex items-center rounded-[10px] border-[1.087px] border-[#793FEE]/30 gap-2 px-4 py-1.5 font-medium text-sm sm:text-base text-gradient-main bg-[#793FEE]/5">
-                        <Image src="/assets/icons/Integration.svg" alt="Integration icon" width={18} height={18} className="sm:w-5 sm:h-5" /> 
+                        <Image src="/assets/icons/Integration.svg" alt="Integration icon" width={18} height={18}  priority /> 
                         <span>Seamless Integration</span>
                     </div>
                     <h2 className="text-2xl font-semibold text-background sm:text-[24px] lg:text-[32px] leading-tight">
@@ -33,7 +33,7 @@ const Integration = () => {
                         <div key={item.name} className="rounded-2xl border border-white/10 bg-white/5 p-4 transition-transform hover:scale-[1.02] active:scale-95">
                             <div className="flex items-center gap-4">
                                 <div className="shrink-0 grid h-12 w-12 sm:h-14 sm:w-14 2xl:h-17 2xl:w-17 place-items-center rounded-2xl bg-[linear-gradient(135deg,rgba(37,99,235,0.20)_0%,rgba(124,58,237,0.20)_100%)] backdrop-blur-md">
-                                    <Image src={item.icon} alt={`${item.name} icon`} width={24} height={24} className="sm:w-7 sm:h-7" />
+                                    <Image src={item.icon} alt={`${item.name} icon`} width={34} height={34} priority />
                                 </div>
                                 <div className='flex flex-col items-start'>
                                     <div className="text-base sm:text-lg font-semibold text-background">{item.name}</div>

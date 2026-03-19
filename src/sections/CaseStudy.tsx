@@ -44,10 +44,10 @@ const CaseStudy = () => {
                     {caseStudies.map((study, idx) => (
                         <div key={idx} className="rounded-[22px] border-[0.88px] border-white/10 bg-[linear-gradient(180deg,#111827_0%,#0F172A_100%)] ">
                             <div className="relative h-44 overflow-hidden rounded-t-[22px]">
-                                <Image src={study.image} alt={study.title} fill className="object-cover" />
+                                <Image src={study.image} alt={study.title} fill className="object-cover" priority />
                                 <div className="absolute inset-0 bg-[linear-gradient(180deg,#111827_0%,rgba(0,0,0,0)_100%)]" aria-hidden="true" />
                                 <div className="absolute right-3 top-3 flex flex-row gap-1.75 rounded-lg border border-[#793FEE] shadow-[0_8.803px_13.205px_-2.641px_rgba(0,0,0,0.1),0_3.521px_5.282px_-3.521px_rgba(0,0,0,0.1)] px-2 py-1 text-sm font-bold text-background">
-                                    <Image src="/assets/icons/funnel-arrow.svg" alt="Arrow" width={20} height={20} /> +62%
+                                    <Image src="/assets/icons/funnel-arrow.svg" alt="Arrow" width={20} height={20} priority /> +62%
                                 </div>
                             </div>
                             <div className="space-y-3 p-4">

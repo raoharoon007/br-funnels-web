@@ -73,7 +73,7 @@ const Footer = () => {
                 type="submit"
                 className="flex items-center justify-center gap-2 rounded-[10px] bg-gradient-horizontal py-3 px-5 text-sm font-semibold text-white transition-all hover:opacity-90 active:scale-[0.98]"
               >
-                <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={24} height={24} className="brightness-0 invert" />
+                <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={24} height={24} className="brightness-0 invert" priority />
               </button>
             </form>
           </div>

@@ -40,7 +40,7 @@ const Brands = () => {
                             key={`${icon}-${idx}`}
                             className="flex h-24 w-full items-center justify-center rounded-[14.085px] border-[0.88px] border-[#793FEE] bg-white/2 backdrop-blur-sm p-3 transition-all hover:bg-white/5"
                         >
-                            <Image src={icon} alt={`Brand icon ${idx + 1}`} width={100} height={100} className=" object-contain" />
+                            <Image src={icon} alt={`Brand icon ${idx + 1}`} width={100} height={100} className=" object-contain" priority />
                         </div>
                     ))}
                 </div>
@@ -48,7 +48,7 @@ const Brands = () => {
                 <div className="relative z-10 mt-8 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-3">
                     <button className="inline-flex items-center gap-2 rounded-xl border border-primary bg-transparent px-5 py-2.5 text-sm font-semibold text-background cursor-pointer transition-all hover:bg-white/5">
                         See How We Scale Brands
-                        <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={18} height={18} className="brightness-0 invert" />
+                        <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={18} height={18} className="brightness-0 invert" priority />
                     </button>
                 </div>
             </div>
