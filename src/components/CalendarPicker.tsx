@@ -156,7 +156,7 @@ export default function CalendarPicker() {
 
         {/* Timezone Dropdown */}
         {tzOpen && (
-          <div className="absolute bottom-[calc(100%+6px)] left-0 right-0 bg-[#161616] border border-[#2a2a2a] rounded-xl overflow-hidden z-50 shadow-2xl">
+          <div className="absolute bottom-[calc(100%+6px)] left-0 right-0 bg-[#161616] border border-[#2a2a2a] rounded-xl overflow-hidden shadow-2xl">
             {TIMEZONES.map((tz) => (
               <div
                 key={tz}
