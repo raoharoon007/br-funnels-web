@@ -38,7 +38,8 @@ const Brands = () => {
                     {brandIcons.map((icon, idx) => (
                         <div
                             key={`${icon}-${idx}`}
-                            className="flex h-24 w-full items-center justify-center rounded-[14.085px] border-[0.88px] border-[#793FEE] bg-white/2 backdrop-blur-sm p-3 transition-all hover:bg-white/5"
+                            style={{ "--bg-radius": "14.085px", "--bg-border": "0.88px" } as React.CSSProperties}
+                            className="flex h-24 w-full items-center justify-center rounded-[14.085px] border-[0.88px] border-gradient-main bg-white/2 backdrop-blur-sm p-3 transition-all hover:bg-white/5"
                         >
                             <Image src={icon} alt={`Brand icon ${idx + 1}`} width={100} height={100} className=" object-contain" priority />
                         </div>

@@ -9,6 +9,7 @@
   --background: #ffffff;
   --foreground: #e4e4e4;
   --primary: #b9b9b9;
+  --bg-glass: rgba(255, 255, 255, 0.02);
 
   /* gradients */
   --gradient-color: #793FEE;
@@ -34,6 +35,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-bg-glass: var(--bg-glass);
 
   /* gradients */
   --color-gradient: var(--gradient-color);
@@ -105,4 +107,25 @@ section[id] {
       rgba(37, 99, 235, 0.2) 0%,
       rgba(124, 58, 237, 0.2) 100%);
 }
+@layer utilities {
+  .border-gradient-main {
+    position: relative;
+    border: none !important;
+    isolation: isolate;
+  }
 
+  .border-gradient-main::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--bg-radius, 10px);
+    padding: var(--bg-border, 1px);
+    background: linear-gradient(180deg, #793FEE 0%, #26FDFE 100%);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}

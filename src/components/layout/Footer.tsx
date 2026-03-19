@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-12 gap-x-8 pb-12">
           
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <p className="select-none leading-normal font-normal text-[24px] md:text-[26px] 2xl:text-[28px] text-gradient-main">
+            <p className="select-none leading-normal font-semibold text-[24px] md:text-[26px] 2xl:text-[28px] text-gradient-main">
               BR FUNNELS
             </p>
             <p className="mt-4 text-sm font-normal leading-6 text-primary max-w-70">

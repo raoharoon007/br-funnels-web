@@ -6,9 +6,10 @@ const Portfolio = () => {
         <section id="Portfolio" className="mx-auto w-full  px-4 py-12 sm:py-14.5">
 
             <div className="mx-auto max-w-6xl text-center flex flex-col items-center">
-                <div className="mb-5 inline-flex items-center rounded-[10px] border-[1.087px] border-[#793FEE]/30 gap-2 px-4 py-1.5 font-medium text-sm sm:text-base text-gradient-main bg-[#793FEE]/5">
+                <div style={{ "--bg-radius": "10.867px", "--bg-border": "1.087px" } as React.CSSProperties}
+                 className="mb-5 inline-flex items-center rounded-[10.867px] border-[1.087px] border-gradient-main gap-2 px-[18.5px] py-[9.6px] font-medium text-sm sm:text-base text-gradient-main bg-[#793FEE]/5">
                     <Image src="/assets/icons/Mail.svg" alt="Mail icon" width={18} height={18} priority />
-                    <span>Portfolio Showcase</span>
+                    <span className='font-medium text-sm sm:text-base'>Portfolio Showcase</span>
                 </div>
                 <h2 className="text-2xl font-semibold text-background sm:text-[24px] lg:text-[32px] leading-tight">
                     Designed for Conversions. <br className="sm:hidden" />

@@ -46,8 +46,10 @@ const CaseStudy = () => {
                             <div className="relative h-44 overflow-hidden rounded-t-[22px]">
                                 <Image src={study.image} alt={study.title} fill className="object-cover" priority />
                                 <div className="absolute inset-0 bg-[linear-gradient(180deg,#111827_0%,rgba(0,0,0,0)_100%)]" aria-hidden="true" />
-                                <div className="absolute right-3 top-3 flex flex-row gap-1.75 rounded-lg border border-[#793FEE] shadow-[0_8.803px_13.205px_-2.641px_rgba(0,0,0,0.1),0_3.521px_5.282px_-3.521px_rgba(0,0,0,0.1)] px-2 py-1 text-sm font-bold text-background">
-                                    <Image src="/assets/icons/funnel-arrow.svg" alt="Arrow" width={20} height={20} priority /> +62%
+                                <div className="absolute right-3 top-3">
+                                    <div style={{ "--bg-radius": "8.803px", "--bg-border": "1px" } as React.CSSProperties} className="relative border border-gradient-main flex flex-row gap-1.75 rounded-[8.803px] shadow-[0_8.803px_13.205px_-2.641px_rgba(0,0,0,0.1),0_3.521px_5.282px_-3.521px_rgba(0,0,0,0.1)] px-2 py-1 text-sm font-bold text-background bg-[#793FEE]/5">
+                                        <Image src="/assets/icons/funnel-arrow.svg" alt="Arrow" width={20} height={20} priority /> +62%
+                                    </div>
                                 </div>
                             </div>
                             <div className="space-y-3 p-4">

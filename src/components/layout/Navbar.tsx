@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <Link
           href="/"
-          className="select-none leading-normal font-normal text-[24px] sm:text-[25px] md:text-[26px] lg:text-[27px] xl:text-[27.5px] 2xl:text-[28px] text-gradient-main"
+          className="select-none leading-normal font-semibold text-[24px] sm:text-[25px] md:text-[26px] lg:text-[27px] xl:text-[27.5px] 2xl:text-[28px] text-gradient-main"
         >
           BR FUNNELS
         </Link>
