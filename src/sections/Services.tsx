@@ -24,8 +24,8 @@ const serviceItems = [
 
 const Services = () => {
     return (
-        <section className="relative mx-auto w-full max-w-6xl px-4 py-14 sm:py-20">
-            <div className="relative mx-auto w-full rounded-3xl p-4 sm:p-6 md:p-8">
+        <section className="relative mx-auto w-full  px-4 py-14 sm:py-20">
+            <div className="relative max-w-6xl mx-auto w-full rounded-3xl ">
                 <div className="text-center">
                     <h2 className="text-3xl font-semibold text-background sm:text-[32px]">Our Revenue Growth Services</h2>
                     <p className="mx-auto mt-3 max-w-6xl text-sm font-medium text-primary sm:text-lg">End-to-end funnel and retention marketing systems tailored to your brand.</p>

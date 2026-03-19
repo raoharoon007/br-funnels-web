@@ -21,8 +21,8 @@ const CallScheduling = () => {
     if (!mounted) return null;
 
     return (
-        <section className="relative mx-auto w-full max-w-7xl px-4 py-14 sm:py-24 overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <section className="relative mx-auto w-full  px-4 py-14 sm:py-24 overflow-hidden">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9.25 lg:gap-16 items-start">
 
                 <div className="space-y-4 order-1">
                     <div className="space-y-3">

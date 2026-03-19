@@ -12,8 +12,8 @@ const integrations = [
 
 const Integration = () => {
     return (
-        <section id="integrations" className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14.5">
-            <div className="rounded-3xl sm:rounded-[39px] border-[0.5px] border-[rgba(185,185,185,0.50)] bg-[linear-gradient(180deg,#111827_0%,#0F172A_100%)] p-6 sm:p-10 md:p-14.5 transition-all">
+        <section id="integrations" className="mx-auto w-full  px-4 py-12 sm:py-14.5">
+            <div className="rounded-3xl mx-auto sm:rounded-[39px] max-w-6xl border-[0.5px] border-[rgba(185,185,185,0.50)] bg-[linear-gradient(180deg,#111827_0%,#0F172A_100%)] p-6 sm:p-10 md:p-14.5 transition-all">
                 
                 <div className="mx-auto max-w-3xl text-center">
                     <div className="mb-5 inline-flex items-center rounded-[10px] border-[1.087px] border-[#793FEE]/30 gap-2 px-4 py-1.5 font-medium text-sm sm:text-base text-gradient-main bg-[#793FEE]/5">

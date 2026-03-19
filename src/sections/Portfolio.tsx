@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const Portfolio = () => {
     return (
-        <section id="Portfolio" className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14.5">
+        <section id="Portfolio" className="mx-auto w-full  px-4 py-12 sm:py-14.5">
 
-            <div className="mx-auto max-w-3xl text-center flex flex-col items-center">
+            <div className="mx-auto max-w-6xl text-center flex flex-col items-center">
                 {/* Badge */}
                 <div className="mb-5 inline-flex items-center rounded-[10px] border-[1.087px] border-[#793FEE]/30 gap-2 px-4 py-1.5 font-medium text-sm sm:text-base text-gradient-main bg-[#793FEE]/5">
                     <Image src="/assets/icons/Mail.svg" alt="Mail icon" width={18} height={18} className="sm:w-5 sm:h-5" />

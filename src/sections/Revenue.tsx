@@ -11,7 +11,8 @@ const steps = [
 
 const Revenue = () => {
     return (
-        <section className="relative mx-auto w-full max-w-6xl px-4 py-14 sm:py-24">
+        <section className="relative mx-auto w-full  px-4 py-14 sm:py-20">
+            <div className="relative mx-auto w-full max-w-6xl ">
             <div className="text-center mb-16">
                 <h2 className="text-[24px] font-semibold text-background sm:text-[32px]">Our 5-Step Revenue Framework</h2>
                 <p className="mx-auto max-w-6xl text-sm font-medium text-primary sm:text-lg">
@@ -65,6 +66,7 @@ const Revenue = () => {
                         <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={20} height={20} className="brightness-10 invert" />
                     </span>
                 </button>
+            </div>
             </div>
         </section>
     );
