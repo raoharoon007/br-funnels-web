@@ -26,16 +26,11 @@ const Revenue = () => {
                 <div className="relative grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-4">
                     {steps.map((step, idx) => (
                         <div key={idx} className="flex flex-col items-center group">
-
-                            {/* ICON CONTAINER */}
                             <div className="relative z-10 flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-gradient-purplish shadow-[0_0_40px_rgba(124,58,237,0.5)] ">
-
-                                {/* STEP NUMBER (Badge) */}
                                 <div className="absolute -top-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full  bg-gradient-main text-[11px] font-bold text-background shadow-md">
                                     {idx + 1}
                                 </div>
 
-                                {/* ICON */}
                                 <div className="relative h-10 w-10 sm:h-12 sm:w-12">
                                     <Image
                                         src={step.icon}
@@ -46,7 +41,6 @@ const Revenue = () => {
                                 </div>
                             </div>
 
-                            {/* DESCRIPTION TEXT */}
                             <div className="mt-8 px-4 text-center flex flex-col items-center gap-1">
                                 <h3 className="text-base font-semibold text-background whitespace-nowrap">{step.title}</h3>
                                 <p className="mt-2 text-[12px] sm:text-[14px]  text-primary font-medium max-w-70 ">
@@ -58,7 +52,6 @@ const Revenue = () => {
                 </div>
             </div>
 
-            {/* CALL TO ACTION BUTTON */}
             <div className="mt-20 flex justify-center">
                 <button className="relative group px-8 py-4 rounded-2xl bg-gradient-horizontal cursor-pointer  ">
                     <span className="flex flex-row items-center gap-2 text-background font-semibold text-[10px] sm:text-base">

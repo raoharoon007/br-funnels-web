@@ -32,20 +32,28 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-base font-medium text-background mb-5">Services</h3>
             <ul className="space-y-4 text-sm text-primary">
-              <li className="hover:text-white cursor-pointer transition-colors">Email Marketing Audit</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Full Management</li>
-              <li className="hover:text-white cursor-pointer transition-colors">SMS Marketing</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Funnel Strategy</li>
+              <li className="">Email Marketing Audit</li>
+              <li className="">Full Management</li>
+              <li className="">SMS Marketing</li>
+              <li className="">Funnel Strategy</li>
             </ul>
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-base font-medium text-background mb-5">Company</h3>
             <ul className="space-y-4 text-sm text-primary">
-              <li className="hover:text-white cursor-pointer transition-colors">Case Studies</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Process</li>
-              <li className="hover:text-white cursor-pointer transition-colors">About</li>
-              <li className="hover:text-white cursor-pointer transition-colors">Contact</li>
+              <li className="hover:text-background cursor-pointer transition-colors">
+                <Link href="#case-studies">Case Studies</Link>
+              </li>
+              <li className="hover:text-background cursor-pointer transition-colors">
+                <Link href="#process">Process</Link>
+              </li>
+              <li className="hover:text-background cursor-pointer transition-colors">
+                <Link href="/">About</Link>
+              </li>
+              <li className="hover:text-background cursor-pointer transition-colors">
+                <Link href="#contact">Contact</Link>
+              </li>
             </ul>
           </div>
 

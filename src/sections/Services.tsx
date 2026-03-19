@@ -44,7 +44,7 @@ const Services = () => {
                                 </div>
                             </div>
                             <p className="mt-3 text-sm max-w-90 text-primary font-medium">{item.description}</p>
-                            <button className="mt-4 flex flex-row items-center gap-1.5 text-sm font-semibold text-gradient-main">
+                            <button className="mt-4 flex flex-row items-center gap-1.5 text-sm font-semibold text-gradient-main cursor-pointer">
                                 {item.cta}
                                 <Image src="/assets/icons/purple-arrow.svg" alt="Arrow" width={20} height={20}  />
                             </button>

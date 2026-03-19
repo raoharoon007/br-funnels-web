@@ -33,10 +33,10 @@ const CaseStudy = () => {
                     <h2 className="text-3xl font-semibold text-background sm:text-[32px]">Proven Funnel Success Stories</h2>
                     <p className="mx-auto mt-3 max-w-6xl font-normal text-sm text-primary sm:text-lg">Real results from real brands we’ve scaled</p>
                     <div className="mt-4 2xl:mt-10.5 flex flex-wrap items-center justify-center gap-2.75">
-                        <button className="rounded-[10px] bg-gradient-main px-5 py-3 text-xs font-semibold text-background">All</button>
-                        <button className="rounded-[10px] border-[0.88px] border-white/5 bg-white/3 backdrop-blur-sm px-5 py-3 text-xs font-semibold text-[#99A1AF]">E-Commerce</button>
-                        <button className="rounded-[10px] border-[0.88px] border-white/5 bg-white/3 backdrop-blur-sm px-5 py-3 text-xs font-semibold text-[#99A1AF]">DTC</button>
-                        <button className="rounded-[10px] border-[0.88px] border-white/5 bg-white/3 backdrop-blur-sm px-5 py-3 text-xs font-semibold text-[#99A1AF]">Info Products</button>
+                        <button className="rounded-[10px] cursor-pointer bg-gradient-main px-5 py-3 text-xs font-semibold text-background">All</button>
+                        <button className="rounded-[10px] cursor-pointer border-[0.88px] border-white/5 bg-white/3 backdrop-blur-sm px-5 py-3 text-xs font-semibold text-[#99A1AF]">E-Commerce</button>
+                        <button className="rounded-[10px] cursor-pointer border-[0.88px] border-white/5 bg-white/3 backdrop-blur-sm px-5 py-3 text-xs font-semibold text-[#99A1AF]">DTC</button>
+                        <button className="rounded-[10px] cursor-pointer border-[0.88px] border-white/5 bg-white/3 backdrop-blur-sm px-5 py-3 text-xs font-semibold text-[#99A1AF]">Info Products</button>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@ const CaseStudy = () => {
                                 <p className="text-sm font-normal max-w-80 text-primary">{study.description}</p>
                                 <div className="border-t-[0.88px] border-t-white/10 pt-3 text-sm flex items-center justify-between">
                                     <span className='text-primary font-medium text-[12px]'>{study.footer}</span>
-                                    <span className="text-gradient-main text-[12px] font-semibold flex flex-row gap-2">View Case Study <Image src="/assets/icons/purple-arrow.svg" alt="Arrow" width={20} height={20} /></span>
+                                    <span className="text-gradient-main text-[12px] font-semibold flex flex-row gap-2 cursor-pointer">View Case Study <Image src="/assets/icons/purple-arrow.svg" alt="Arrow" width={20} height={20} /></span>
                                 </div>
                             </div>
                         </div>
