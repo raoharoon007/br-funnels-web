@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '@/sections/Hero'
 import Integration from '@/sections/Integration'
 import Portfolio from '@/sections/Portfolio'
@@ -19,14 +18,31 @@ const page = () => {
       <Integration />
       <Portfolio />
       <Performance />
+      
+      <section id="clients">
+        <TrustedBrands />
+      </section>
+
       <Brands />
       <Riskfree />
-      <Services />
-      <CaseStudy />
-      <TrustedBrands />
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="case-studies">
+        <CaseStudy />
+      </section>
+
       <Optimization />
-      <Revenue />
-      <CallScheduling />
+
+      <section id="process">
+        <Revenue />
+      </section>
+
+      <section id="contact">
+        <CallScheduling />
+      </section>
     </main>
   )
 }

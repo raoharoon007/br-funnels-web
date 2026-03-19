@@ -61,6 +61,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* =========================
    Custom Utilities
