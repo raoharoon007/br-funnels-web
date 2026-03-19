@@ -52,12 +52,12 @@ const Hero = () => {
           </div>
 
           <div className="mt-10 2xl:mt-12.5 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-            <button className="w-full sm:w-auto rounded-[14px] bg-gradient-horizontal px-6 py-3.5 sm:px-4 sm:py-2.5 cursor-pointer flex flex-row gap-2 items-center justify-center text-sm sm:text-base font-medium text-background transition-transform active:scale-95">
+            <button className="w-full sm:w-auto rounded-[14px] bg-gradient-horizontal px-6 py-3.5 sm:px-4 sm:py-2.5 cursor-pointer flex flex-row gap-2 items-center justify-center text-sm sm:text-base font-semibold text-background transition-transform active:scale-95">
               Book a Free Strategy Call
               <Image src="/assets/icons/Arrow.svg" alt="Arrow" width={20} height={20} className="brightness-0 invert" priority />
             </button>
 
-            <button className="w-full sm:w-auto rounded-[14px] border border-primary bg-transparent cursor-pointer px-6 py-3.5 sm:px-4 sm:py-2.5 text-sm sm:text-base font-medium text-background transition-all hover:bg-white/5 active:scale-95">
+            <button className="w-full sm:w-auto rounded-[14px] border border-primary bg-transparent cursor-pointer px-6 py-3.5 sm:px-4 sm:py-2.5 text-sm sm:text-base font-semibold text-background transition-all hover:bg-white/5 active:scale-95">
               View Case Studies
             </button>
           </div>
