@@ -28,7 +28,6 @@ export default function CalendarPicker() {
   const [tzOpen, setTzOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  // Hydration errors se bachne ke liye
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -75,7 +74,7 @@ export default function CalendarPicker() {
   if (!mounted) return null;
 
   return (
-    <div className="w-full max-w-170  text-white p-10 sm:p-8 rounded-3xl bg-white/2  mx-auto font-sans">
+    <div className="w-full max-w-170  text-white p-10 sm:p-8  bg-white/2  mx-auto font-sans">
       {/* Header */}
       <div className="flex justify-between items-center mb-8">
         <span className="sm:text-[17px] text-xs font-medium text-background">Select a Date & Time</span>
@@ -84,7 +83,6 @@ export default function CalendarPicker() {
         </span>
       </div>
 
-      {/* Navigation */}
       <div className="flex items-center justify-between mb-5 px-1">
         <button 
           onClick={prevMonth}
@@ -101,7 +99,6 @@ export default function CalendarPicker() {
         </button>
       </div>
 
-      {/* Calendar Grid */}
       <div className="w-full">
         <div className="grid grid-cols-7 mb-2.5">
           {DAYS.map((d) => (

@@ -24,7 +24,7 @@ const CallScheduling = () => {
         <section className="relative mx-auto w-full  px-4 py-14 sm:py-24 overflow-hidden">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9.25 lg:gap-16 items-start">
 
-                <div className="space-y-4 order-1">
+                <div className="space-y-5 order-1">
                     <div className="space-y-3">
                         <h2 className="text-3xl font-semibold text-background sm:text-[32px]">
                             Ready to Unlock
@@ -37,7 +37,7 @@ const CallScheduling = () => {
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="lg:pt-10 flex items-center gap-3">
                         <div className="h-14 w-14 overflow-hidden rounded-full border border-white/10 bg-[#111827]">
                             <Image src="/assets/icons/profile.svg" alt="avatar" width={56} height={56} className="object-cover" priority />
                         </div>
@@ -47,7 +47,7 @@ const CallScheduling = () => {
                         </div>
                     </div>
 
-                    <div className="space-y-2 text-primary">
+                    <div className="lg:pt-5 space-y-3 text-primary">
                         <h2 className='sm:text-[26px] text-base font-medium text-background'>Strategy Call</h2>
                         <div className="flex items-center gap-3 font-medium">
                             <Image src="/assets/icons/clock.svg" alt="clock" width={30} height={30} className="opacity-60" priority />
@@ -66,11 +66,11 @@ const CallScheduling = () => {
 
                         <div className="space-y-5 mt-6">
                             {details.map((item) => (
-                                <div key={item} className="flex items-center gap-4 group">
-                                    <div className="mt-1 flex shrink-0 items-center justify-center rounded-full ">
+                                <div key={item} className="flex items-center gap-3 group">
+                                    <div className=" flex shrink-0 items-center justify-center rounded-full ">
                                         <Image src="/assets/icons/goal.svg" alt="check" width={30} height={30} priority />
                                     </div>
-                                    <span className="text-[13px] font-medium text-primary">{item}</span>
+                                    <span className="text-[13px] max-w-90 font-medium text-primary">{item}</span>
                                 </div>
                             ))}
                         </div>
@@ -81,11 +81,11 @@ const CallScheduling = () => {
                     </p>
                 </div>
 
-                <div className="order-2 flex flex-col items-center lg:items-end w-full">
+                <div className="order-2 flex flex-col items-center lg:items-end w-full lg:pt-43"> 
                     <CalendarPicker />
 
                     <div className="w-full max-w-170 mt-6">
-                        <button className="w-full lg:w-auto  lg:ml-auto px-10 py-4 bg-gradient-horizontal cursor-pointer rounded-[14px] flex items-center justify-center gap-3 text-background font-semibold text-base ">
+                        <button className="w-full lg:w-auto lg:ml-auto px-10 py-4 bg-gradient-horizontal cursor-pointer rounded-[14px] flex items-center justify-center gap-3 text-background font-semibold text-base ">
                             Schedule a Call
                             <Image src="/assets/icons/Arrow.svg" alt="check" width={20} height={20} priority />
                         </button>
