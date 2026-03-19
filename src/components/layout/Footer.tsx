@@ -2,6 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
+  
+  const socialLinks = [
+    { name: 'Linkedin', href: 'https://www.linkedin.com/company/br-funnels/' },
+    { name: 'Twitter', href: '#' }, 
+    { name: 'Instagram', href: 'https://www.instagram.com/brfunnels1/' },
+  ];
+
   return (
     <footer className="w-full">
       <div className="mx-auto w-full max-w-360 px-6 py-10 lg:px-10 2xl:px-15">
@@ -17,13 +24,15 @@ const Footer = () => {
             </p>
             
             <div className="mt-6 flex gap-3">
-              {['Linkedin', 'Twitter', 'Instagram'].map((social) => (
+              {socialLinks.map((social) => (
                 <Link 
-                  key={social}
-                  href="#" 
+                  key={social.name}
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
                   className="flex h-10 w-10 items-center justify-center rounded-[10px] border border-white/5 bg-white/5 transition-all hover:bg-white/10 hover:border-white/10 active:scale-90"
                 >
-                  <Image src={`/assets/icons/${social}.svg`} alt={social} width={18} height={18} />
+                  <Image src={`/assets/icons/${social.name}.svg`} alt={social.name} width={18} height={18} priority/>
                 </Link>
               ))}
             </div>
