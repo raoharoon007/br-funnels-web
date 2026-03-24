@@ -16,16 +16,21 @@ export default function ScrollFix() {
         if (element) {
           setTimeout(() => {
             const width = window.innerWidth;
-            let offset = 50; 
-            if (width >= 1440) offset = 100;
-            else if (width >= 992) offset = 60;
+            let offset = 45; 
+
+            if (width >= 1440) {
+              offset = 100; 
+            } else if (width >= 992) {
+              offset = 60; 
+            } else if (width >= 320) {
+              offset = 50; 
+            }
 
             const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
+            const offsetPosition = elementPosition + window.scrollY - offset;
 
             window.scrollTo({
               top: offsetPosition,
-                  
               behavior: "smooth",
             });
           }, 150);
