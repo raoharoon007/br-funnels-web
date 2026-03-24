@@ -19,7 +19,7 @@ const Riskfree = () => {
             <div className="relative max-w-6xl z-10 mx-auto w-full ">
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
                     <div className="rounded-[17px] bg-gradient-main p-4 shadow-[0_0_20px_rgba(121,63,238,0.4)]">
-                        <Image src="/assets/icons/Shield.svg" alt="Guarantee" width={24} height={24} priority />
+                        <Image src="/assets/icons/Shield.svg" alt="Guarantee" width={35} height={35} priority />
                     </div>
                     <h2 className="mt-5 text-3xl font-semibold text-background sm:text-[32px]">Results Backed by Performance Guarantee</h2>
                     <p className="mt-2 text-base text-primary sm:text-lg font-normal">Your growth is our commitment. We stand behind every campaign.</p>
