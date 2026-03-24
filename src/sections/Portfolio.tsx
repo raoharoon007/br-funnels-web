@@ -25,7 +25,7 @@ const Portfolio = () => {
                     width={1182}
                     height={528}
                     className="mx-auto pt-19.25"
-                    quality={100}
+                    quality={75}
                     priority 
                 />
             </div>

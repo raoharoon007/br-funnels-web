@@ -49,17 +49,17 @@ const Optimization = () => {
                 </div>
 
                 <div className="relative flex justify-center lg:justify-end gap-2 sm:gap-4 h-125 sm:h-175 order-2 mt-12 lg:mt-0">
-                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-30 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden translate-y-12">
-                        <Image src="/assets/images/largepic1.webp" alt="Email Template 1" fill className="object-cover object-top" priority />
+                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-28 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden translate-y-12">
+                        <Image src="/assets/images/largepic1.webp" alt="Email Template 1" fill sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 15vw" className="object-cover object-top" priority />
                     </div>
-                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-30 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden -translate-y-8 shadow-2xl">
-                        <Image src="/assets/images/largepic2.webp" alt="Email Template 2" fill className="object-cover object-top" priority />
+                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-28 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden -translate-y-8 shadow-2xl">
+                        <Image src="/assets/images/largepic2.webp" alt="Email Template 2" fill sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 15vw" className="object-cover object-top" priority />
                     </div>
-                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-30 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden translate-y-4">
-                        <Image src="/assets/images/largepic3.webp" alt="Email Template 3" fill className="object-cover object-top" priority />
+                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-28 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden translate-y-4">
+                        <Image src="/assets/images/largepic3.webp" alt="Email Template 3" fill sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 15vw" className="object-cover object-top" priority />
                     </div>
-                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-30 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden -translate-y-12">
-                        <Image src="/assets/images/largepic4.webp" alt="Email Template 4" fill className="object-cover object-top" priority />
+                    <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-28 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden -translate-y-12">
+                        <Image src="/assets/images/largepic4.webp" alt="Email Template 4" fill sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 15vw" className="object-cover object-top" priority />
                     </div>
                 </div>
 

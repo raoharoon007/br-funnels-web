@@ -7,31 +7,35 @@ export default function ScrollFix() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
+    const scrollToSection = () => {
       const hash = window.location.hash;
       if (hash) {
         const id = hash.replace("#", "");
         const element = document.getElementById(id);
+        
         if (element) {
-          const width = window.innerWidth;
-          let offset = 75; 
-          if (width >= 1440) offset = 120;
-          else if (width >= 992) offset = 100;
+          setTimeout(() => {
+            const width = window.innerWidth;
+            let offset = 80; 
+            if (width >= 1440) offset = 130;
+            else if (width >= 992) offset = 110;
 
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - offset;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+          }, 200);
         }
       }
     };
 
-    const timeoutId = setTimeout(handleScroll, 100);
+    scrollToSection();
+    window.addEventListener("hashchange", scrollToSection);
     
-    return () => clearTimeout(timeoutId);
+    return () => window.removeEventListener("hashchange", scrollToSection);
   }, [pathname]);
 
   return null;

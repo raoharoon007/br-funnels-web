@@ -2,19 +2,19 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
-  
+
   const socialLinks = [
     { name: 'Linkedin', href: 'https://www.linkedin.com/company/br-funnels/' },
-    { name: 'Twitter', href: '#' }, 
+    { name: 'Twitter', href: '#' },
     { name: 'Instagram', href: 'https://www.instagram.com/brfunnels1/' },
   ];
 
   return (
     <footer className="w-full">
       <div className="mx-auto w-full max-w-360 px-6 py-10 lg:px-10 2xl:px-15">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-12 gap-x-8 pb-12">
-          
+
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <p className="select-none leading-normal font-semibold text-[24px] md:text-[26px] 2xl:text-[28px] text-gradient-main">
               BR FUNNELS
@@ -22,8 +22,8 @@ const Footer = () => {
             <p className="mt-4 text-sm font-normal leading-6 text-primary max-w-70">
               Performance-driven email & SMS growth systems.
             </p>
-            
-             <div className="mt-6 flex gap-3">
+
+            <div className="mt-6 flex gap-3">
               {socialLinks.map((social) => {
                 const isLinkDisabled = social.href === "#";
 
@@ -89,7 +89,7 @@ const Footer = () => {
             <p className="mt-3 text-sm text-primary leading-relaxed max-w-75 md:max-w-full">
               Expert tips on email marketing and funnel optimization.
             </p>
-            
+
             <form className="mt-6 flex flex-col md:flex-row w-full max-w-[320px] md:max-w-full gap-3">
               <input
                 type="email"

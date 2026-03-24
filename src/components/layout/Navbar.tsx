@@ -31,7 +31,7 @@ const Navbar = () => {
             <li key={link.label}>
               <Link
                 href={link.href}
-                scroll={false} // Ye line zaroori hai
+               
                 className="text-sm sm:text-base md:text-base lg:text-lg font-medium text-foreground transition-colors hover:text-white"
               >
                 {link.label}
@@ -42,7 +42,6 @@ const Navbar = () => {
 
         <Link
           href="#contact"
-          scroll={false} // Ye line yahan bhi add karein
           className="hidden md2:flex items-center justify-center gap-2 px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.75 md:py-[13.5px] rounded-[10px] bg-gradient-horizontal text-background text-sm sm:text-base md:text-lg font-medium transition-transform active:scale-95"
         >
           <Image src="/assets/icons/Phone.svg" alt="Send" width={16} height={16} priority/>
@@ -68,7 +67,6 @@ const Navbar = () => {
             <li key={link.label}>
               <Link
                 href={link.href}
-                scroll={false} // Mobile Links mein bhi fix
                 className="text-base font-medium text-foreground"
                 onClick={() => setMenuOpen(false)}
               >
@@ -79,7 +77,7 @@ const Navbar = () => {
           <li>
             <Link
               href="#contact"
-              scroll={false}
+            
               className="inline-flex items-center justify-center gap-2 px-6 py-[13.5px] rounded-[10px] bg-gradient-horizontal text-background text-sm sm:text-base md:text-lg font-medium"
               onClick={() => setMenuOpen(false)}
             >

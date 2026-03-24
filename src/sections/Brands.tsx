@@ -16,14 +16,14 @@ const brandIcons = [
 const Brands = () => {
     return (
         <section className="mx-auto w-full px-4 py-14 sm:py-20">
-            
+
             <div className="relative mx-auto w-full max-w-6xl rounded-[28px] border border-white/10 p-6 sm:p-10 md:p-14.5 2xl:px-25 2xl:py-15 overflow-hidden">
-                
-                <div 
+
+                <div
                     className="absolute -right-[10%] -top-[15%] bg-gradient-main rounded-full w-75 h-75 opacity-25 blur-[80px] pointer-events-none z-0"
                 />
 
-                <div 
+                <div
                     className="absolute -left-[10%] -bottom-[15%] bg-gradient-main rounded-full w-75 h-75 opacity-25 blur-[80px] pointer-events-none z-0"
                 />
 
@@ -41,7 +41,15 @@ const Brands = () => {
                             style={{ "--bg-radius": "14.085px", "--bg-border": "0.88px" } as React.CSSProperties}
                             className="flex h-24 w-full items-center justify-center rounded-[14.085px] border-[0.88px] border-gradient-main bg-white/2 backdrop-blur-sm p-3 transition-all hover:bg-white/5"
                         >
-                            <Image src={icon} alt={`Brand icon ${idx + 1}`} width={100} height={100} className=" object-contain" priority />
+                            <div className="relative w-25 h-25">
+                                <Image
+                                    src={icon}
+                                    alt={`Brand icon ${idx + 1}`}
+                                    fill
+                                    className="object-contain"
+                                    priority
+                                />
+                            </div>
                         </div>
                     ))}
                 </div>
