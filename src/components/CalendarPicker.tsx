@@ -58,7 +58,7 @@ export default function CalendarPicker() {
   const isAvailable = (day: number) => {
     const d = new Date(currentYear, currentMonth, day);
     const dow = d.getDay();
-    const isWeekday = dow >= 1 && dow <= 5;
+    const isWeekday = dow >= 1 && dow <= 4;
     const isPast = d < new Date(today.getFullYear(), today.getMonth(), today.getDate());
     return isWeekday && !isPast;
   };
