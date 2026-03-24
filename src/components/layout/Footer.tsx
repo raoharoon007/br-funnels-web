@@ -23,18 +23,36 @@ const Footer = () => {
               Performance-driven email & SMS growth systems.
             </p>
             
-            <div className="mt-6 flex gap-3">
-              {socialLinks.map((social) => (
-                <Link 
-                  key={social.name}
-                  href={social.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex h-10 w-10 items-center justify-center rounded-[10px] border border-white/5 bg-white/5 transition-all hover:bg-white/10 hover:border-white/10 active:scale-90"
-                >
-                  <Image src={`/assets/icons/${social.name}.svg`} alt={social.name} width={18} height={18} priority/>
-                </Link>
-              ))}
+             <div className="mt-6 flex gap-3">
+              {socialLinks.map((social) => {
+                const isLinkDisabled = social.href === "#";
+
+                const commonClasses = "flex h-10 w-10 items-center justify-center rounded-[10px] border border-white/5 bg-white/5 transition-all active:scale-90";
+
+                if (isLinkDisabled) {
+                  return (
+                    <div
+                      key={social.name}
+                      className={`${commonClasses} cursor-default`} 
+                      
+                    >
+                      <Image src={`/assets/icons/${social.name}.svg`} alt={social.name} width={18} height={18} priority />
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${commonClasses} hover:bg-white/10 hover:border-white/10`}
+                  >
+                    <Image src={`/assets/icons/${social.name}.svg`} alt={social.name} width={18} height={18} priority />
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
