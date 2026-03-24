@@ -58,43 +58,30 @@
    Base styles
 ========================= */
 
-html,body {
+body {
   background: var(--bodybg);
   color: var(--foreground);
   font-family: var(--font-poppins);
-  scroll-padding-top: 50px !important;
-  scroll-behavior: smooth !important;
-}
-/* html {
-  scroll-behavior: smooth !important;
+
 }
 
-section[id]::before {
-  content: "";
-  display: block;
-  height: 90px;      
-  margin-top: -90px;
-  visibility: hidden;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 50px !important;
 }
 
 @media (min-width: 992px) {
-  section[id]::before {
-    height: 110px;    
-    margin-top: -110px;
+  html {
+    scroll-padding-top: 60px !important;
   }
 }
 
 @media (min-width: 1440px) {
-  section[id]::before {
-    height: 130px;    
-    margin-top: -130px;
+  html {
+    scroll-padding-top: 100px !important; 
   }
-} */
+}
 
-/* =========================
-   Custom Utilities
-========================= */
 
 @utility text-gradient-main {
   background: linear-gradient(180deg, #793FEE 0%, #26FDFE 100%);
