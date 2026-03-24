@@ -39,9 +39,9 @@ const Brands = () => {
                         <div
                             key={`${icon}-${idx}`}
                             style={{ "--bg-radius": "14.085px", "--bg-border": "0.88px" } as React.CSSProperties}
-                            className="flex h-24 w-full items-center justify-center rounded-[14.085px] border-[0.88px] border-gradient-main bg-white/2 backdrop-blur-sm p-3 transition-all hover:bg-white/5"
+                            className="flex h-20 w-full items-center justify-center rounded-[14.085px] border-[0.88px] border-gradient-main bg-white/2 backdrop-blur-sm p-3 transition-all hover:bg-white/5"
                         >
-                            <div className="relative w-25 h-25">
+                            <div className="relative w-25 h-20">
                                 <Image
                                     src={icon}
                                     alt={`Brand icon ${idx + 1}`}
