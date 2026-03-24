@@ -58,12 +58,14 @@
    Base styles
 ========================= */
 
-body {
+html,body {
   background: var(--bodybg);
   color: var(--foreground);
   font-family: var(--font-poppins);
+  scroll-padding-top: 50px !important;
+  scroll-behavior: smooth !important;
 }
-html {
+/* html {
   scroll-behavior: smooth !important;
 }
 
@@ -88,7 +90,7 @@ section[id]::before {
     height: 130px;    
     margin-top: -130px;
   }
-}
+} */
 
 /* =========================
    Custom Utilities
