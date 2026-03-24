@@ -67,7 +67,7 @@ body {
 
 html {
   scroll-behavior: smooth !important;
-  scroll-padding-top: 50px !important;
+  scroll-padding-top: 320px !important;
 }
 
 @media (min-width: 992px) {

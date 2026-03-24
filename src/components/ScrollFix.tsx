@@ -7,41 +7,59 @@ export default function ScrollFix() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const scrollToSection = () => {
-      const hash = window.location.hash;
-      if (hash) {
-        const id = hash.replace("#", "");
-        const element = document.getElementById(id);
-        
-        if (element) {
-          setTimeout(() => {
-            const width = window.innerWidth;
-            let offset = 45; 
-
-            if (width >= 1440) {
-              offset = 100; 
-            } else if (width >= 992) {
-              offset = 60; 
-            } else if (width >= 320) {
-              offset = 50; 
-            }
-
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.scrollY - offset;
-
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: "smooth",
-            });
-          }, 150);
-        }
-      }
+    const getOffset = () => {
+      const width = window.innerWidth;
+      if (width >= 1440) return 100;
+      if (width >= 992) return 60;
+      return 320;
     };
 
-    scrollToSection();
-    window.addEventListener("hashchange", scrollToSection);
-    
-    return () => window.removeEventListener("hashchange", scrollToSection);
+    const scrollToId = (id: string) => {
+      let attempts = 0;
+      const tryScroll = () => {
+        const element = document.getElementById(id);
+        if (element) {
+          const top =
+            element.getBoundingClientRect().top + window.scrollY - getOffset();
+          window.scrollTo({ top, behavior: "smooth" });
+        } else if (attempts < 10) {
+          attempts++;
+          setTimeout(tryScroll, 100);
+        }
+      };
+      tryScroll();
+    };
+
+    const hash = window.location.hash?.replace("#", "");
+    if (hash) {
+      setTimeout(() => scrollToId(hash), 150);
+    }
+
+    const handleClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest("a");
+      if (!target) return;
+
+      const href = target.getAttribute("href");
+      if (!href || !href.startsWith("#")) return;
+
+      e.preventDefault();
+      const id = href.replace("#", "");
+      window.history.pushState(null, "", href);
+      scrollToId(id);
+    };
+
+    const handleHashChange = () => {
+      const id = window.location.hash?.replace("#", "");
+      if (id) scrollToId(id);
+    };
+
+    document.addEventListener("click", handleClick);
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
   }, [pathname]);
 
   return null;
