@@ -45,7 +45,7 @@
   --gradient-horizontal: var(--gradient-horizontal);
 
   /* breakpoints */
-  --breakpoint-sm: 510px;
+  --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-md2: 992px;
   --breakpoint-lg: 1024px;
