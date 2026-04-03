@@ -48,7 +48,7 @@ const Optimization = () => {
                     </div>
                 </div>
 
-                <div className="relative flex justify-center lg:justify-end gap-2 sm:gap-4 h-125 sm:h-175 order-2 mt-12 lg:mt-0">
+                <div className="relative flex justify-center lg:justify-end gap-2 sm:gap-4 h-320 order-2 mt-12 lg:mt-0">
                     <div className="relative z-10 w-1/4 min-w-17.5 sm:min-w-25 lg:min-w-28 2xl:min-w-35 rounded-[5px] border-2 border-background overflow-hidden translate-y-12">
                         <Image src="/assets/images/largepic1.webp" alt="Email Template 1" fill sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 15vw" className="object-cover object-top" priority />
                     </div>

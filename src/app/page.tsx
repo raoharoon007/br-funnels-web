@@ -18,10 +18,8 @@ const page = () => {
       <Integration />
       <Portfolio />
       <Performance />
-      
-      <section id="clients">
-        <TrustedBrands />
-      </section>
+
+
 
       <Brands />
       <Riskfree />
@@ -32,6 +30,10 @@ const page = () => {
 
       <section id="case-studies">
         <CaseStudy />
+      </section>
+
+      <section id="clients">
+        <TrustedBrands />
       </section>
 
       <Optimization />
