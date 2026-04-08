@@ -75,7 +75,7 @@ export default function CalendarPicker() {
   if (!mounted) return null;
 
   return (
-    <div className="w-full max-w-170  text-white p-10 sm:p-8 bg-white/2  mx-auto font-sans">
+    <div className="w-full max-w-170  text-white p-10 sm:p-8 bg-white/2  mx-auto ">
       {/* Header */}
       <div className="flex justify-between items-center mb-8">
         <span className="sm:text-[17px] text-xs font-medium text-background">Select a Date & Time</span>
