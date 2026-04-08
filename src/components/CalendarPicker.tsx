@@ -86,14 +86,14 @@ export default function CalendarPicker() {
 
       {/* Navigation */}
       <div className="flex items-center justify-between mb-5 px-1">
-        <button 
+        <button
           onClick={prevMonth}
           className="w-9 h-9 flex items-center justify-center rounded-md border-[0.502px] border-white/10 bg-white/5 cursor-pointer "
         >
           <Image src="/assets/icons/left-arrow.svg" alt="avatar" width={20} height={20} className="object-cover" priority />
         </button>
         <span className="text-[14px] text-background font-medium">{MONTHS[currentMonth]} {currentYear}</span>
-        <button 
+        <button
           onClick={nextMonth}
           className="w-9 h-9 flex items-center justify-center rounded-md border-[0.502px] border-white/10 bg-white/5 cursor-pointer"
         >
@@ -110,15 +110,15 @@ export default function CalendarPicker() {
             </div>
           ))}
         </div>
-        
+
         <div className="grid grid-cols-7 gap-1.5">
           {cells.map((day, i) => {
             if (day === null) return <div key={`empty-${i}`} className="aspect-square" />;
-            
+
             const avail = isAvailable(day);
             const sel = selectedDay === day;
             const tod = isToday(day);
-            
+
             return (
               <button
                 key={day}
@@ -141,7 +141,7 @@ export default function CalendarPicker() {
 
       {/* Timezone Section */}
       <div className="relative mt-7">
-        <div 
+        <div
           onClick={() => setTzOpen(!tzOpen)}
           className="border-[0.502px] border-white/10 bg-white/5 rounded-[10px] p-3.5 flex items-center gap-2.5 cursor-pointer hover:border-[#333] transition-all"
         >
@@ -150,11 +150,13 @@ export default function CalendarPicker() {
           </span>
           <div className="flex-1">
             <div className="text-[12px] text-[#6A7282] mb-0.5 tracking-tight">Time zone</div>
-            <div className="text-[12px] text-background font-normal">{timezone}</div>
+            <div className="text-[12px] text-background font-normal flex gap-2.5">{timezone}
+              <span className={`transition-transform duration-200 pt-0.5 ${tzOpen ? "rotate-180" : ""}`}>
+                <Image src="/assets/icons/arrow-outline.svg" alt="avatar" width={20} height={20} className="object-cover" />
+              </span>
+            </div>
           </div>
-          <span className={`transition-transform duration-200 ${tzOpen ? "rotate-180" : ""}`}>
-             <Image src="/assets/icons/arrow-outline.svg" alt="avatar" width={20} height={20} className="object-cover" />
-          </span>
+
         </div>
 
         {/* Timezone Dropdown */}
