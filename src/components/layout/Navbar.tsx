@@ -25,7 +25,6 @@ const Navbar = () => {
           BR FUNNELS
         </Link>
 
-        {/* Desktop Links */}
         <ul className="hidden md2:flex items-center gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8">
           {navLinks.map((link) => (
             <li key={link.label}>
@@ -48,7 +47,6 @@ const Navbar = () => {
           Book a Call
         </Link>
 
-        {/* Mobile Hamburger */}
         <button
           className="md2:hidden flex flex-col gap-1.5 p-2 rounded-md transition"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -60,7 +58,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div className={`md2:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-80 border-t border-white/5' : 'max-h-0'}`}>
         <ul className="flex flex-col px-6 py-4 gap-6">
           {navLinks.map((link) => (

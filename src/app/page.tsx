@@ -19,8 +19,6 @@ const page = () => {
       <Portfolio />
       <Performance />
 
-
-
       <Brands />
       <Riskfree />
 

@@ -82,7 +82,6 @@ html {
   }
 }
 
-
 @utility text-gradient-main {
   background: linear-gradient(180deg, #793FEE 0%, #26FDFE 100%);
   background-clip: text;

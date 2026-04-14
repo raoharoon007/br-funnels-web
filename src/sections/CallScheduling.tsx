@@ -84,12 +84,12 @@ const CallScheduling = () => {
                 <div className="order-2 flex flex-col items-center lg:items-end w-full lg:pt-43"> 
                     <CalendarPicker />
 
-                    <div className="w-full max-w-170 mt-6">
+                    {/* <div className="w-full max-w-170 mt-6">
                         <button className="w-full lg:w-auto lg:ml-auto px-10 py-4 bg-gradient-horizontal cursor-pointer rounded-[14px] flex items-center justify-center gap-3 text-background font-semibold text-base ">
                             Schedule a Call
                             <Image src="/assets/icons/Arrow.svg" alt="check" width={20} height={20} priority />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
