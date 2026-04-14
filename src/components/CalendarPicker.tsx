@@ -41,7 +41,7 @@ export default function CalendarPicker() {
           style={{ height: "600px",  }}
         >
           <InlineWidget
-            url="https://calendly.com/devrao252001/30min"
+            url="https://calendly.com/consulthanan/30min"
             styles={{ height: "100%", width: "100%" }}
             pageSettings={{
               backgroundColor: "0B0F1A",
