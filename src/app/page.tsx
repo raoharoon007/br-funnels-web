@@ -11,9 +11,9 @@ import Optimization from '@/sections/Optimization'
 import Revenue from '@/sections/Revenue'
 import CallScheduling from '@/sections/CallScheduling'
 
-const page = () => {
+const HomePage = () => {
   return (
-    <main>
+    <>
       <Hero />
       <Integration />
       <Portfolio />
@@ -43,8 +43,8 @@ const page = () => {
       <section id="contact">
         <CallScheduling />
       </section>
-    </main>
+    </>
   )
 }
 
-export default page
+export default HomePage
