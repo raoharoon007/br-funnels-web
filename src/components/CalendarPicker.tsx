@@ -13,7 +13,7 @@ export default function CalendarPicker() {
   if (!mounted) return null;
 
   return (
-    <div className="w-full max-w-170 mx-auto">
+    <div className="w-full max-w-161.5 mx-auto">
       <div
         className="relative rounded-[14px] overflow-hidden"
         style={{
