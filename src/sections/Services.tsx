@@ -5,19 +5,19 @@ const serviceItems = [
     {
         icon: '/assets/icons/Search.svg',
         title: 'Email Marketing Audit',
-        description: 'Deep performance analysis, segmentation gaps, and revenue leak detection.',
+        description: "We dig into your Klaviyo account and identify every revenue leak  from missing flows and weak segmentation to deliverability issues and copy gaps. You'll get a full action plan in 48 hours.",
         cta: 'Learn More',
     },
     {
         icon: '/assets/icons/Power.svg',
         title: 'Full Email Marketing Management',
-        description: 'Strategy, automation, campaigns, copywriting, and ongoing optimization.',
+        description: 'End-to-end ownership of your email channel. We handle strategy, flow builds, campaign calendar, copywriting, design, A/B testing, and monthly reporting. You focus on your product — we drive the revenue.',
         cta: 'Get Started',
     },
     {
         icon: '/assets/icons/Sms.svg',
         title: 'SMS Marketing',
-        description: 'High-converting SMS flows and promotional campaigns with compliance built in.',
+        description: 'High-converting SMS flows and promotional campaigns built for compliance and conversion. Abandoned cart recovery, back-in-stock alerts, VIP campaigns — all integrated with your existing Klaviyo setup.',
         cta: 'Explore',
     },
 ];

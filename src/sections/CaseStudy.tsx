@@ -4,24 +4,27 @@ import Image from 'next/image';
 const caseStudies = [
     {
         image: '/assets/images/casestudy1.webp',
-        label: 'E-Commerce',
-        title: 'Revenue in 90 Days',
-        description: 'Increased email revenue through segmented automation & personalized flows.',
-        footer: 'Fashion Retailer',
+        label: 'eCommerce',
+        title: '+43% Email Revenue in 60 Days',
+        description: 'Rebuilt abandoned cart and post-purchase flows for a fashion retailer — turning one-time buyers into repeat customers.',
+        footer: 'Fashion Retailer — eCommerce',
+        metric: '+43%',
     },
     {
         image: '/assets/images/casestudy2.webp',
-        label: 'E-Commerce',
-        title: 'Trial Conversions',
-        description: 'Optimized onboarding sequences and nurture campaigns for B2B E-Commerce.',
-        footer: 'Analytics Platform',
+        label: 'DTC',
+        title: '3.8x ROI in First 90 Days',
+        description: 'Full Klaviyo setup from scratch — welcome series, flows, segmentation, and monthly campaigns for a DTC wellness brand.',
+        footer: 'Wellness Brand — DTC',
+        metric: '3.8x',
     },
     {
         image: '/assets/images/casestudy3.webp',
         label: 'DTC',
-        title: 'Customer LTV',
-        description: 'Built retention system with SMS integration and post-purchase flows.',
-        footer: 'Wellness Brand',
+        title: '35% of Total Revenue From Email',
+        description: 'Rebuilt retention system with SMS integration, post-purchase flows, and winback sequences.',
+        footer: 'Home & Living Brand — DTC',
+        metric: '35%',
     },
 ];
 
@@ -48,7 +51,7 @@ const CaseStudy = () => {
                                 <div className="absolute inset-0 bg-[linear-gradient(180deg,#111827_0%,rgba(0,0,0,0)_100%)]" aria-hidden="true" />
                                 <div className="absolute right-3 top-3">
                                     <div style={{ "--bg-radius": "8.803px", "--bg-border": "1px" } as React.CSSProperties} className="relative border border-gradient-main flex flex-row gap-1.75 rounded-[8.803px] shadow-[0_8.803px_13.205px_-2.641px_rgba(0,0,0,0.1),0_3.521px_5.282px_-3.521px_rgba(0,0,0,0.1)] px-2 py-1 text-sm font-bold text-background bg-[#793FEE]/5">
-                                        <Image src="/assets/icons/funnel-arrow.svg" alt="Arrow" width={20} height={20} priority /> +62%
+                                        <Image src="/assets/icons/funnel-arrow.svg" alt="Arrow" width={20} height={20} priority /> {study.metric}
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import CalendarPicker from '@/components/CalendarPicker';
 
@@ -11,15 +11,8 @@ const details = [
     'Goals you have for email/SMS revenue growth',
 ];
 
+
 const CallScheduling = () => {
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null;
-
     return (
         <section className="relative mx-auto w-full  px-4 py-14 sm:py-24 overflow-hidden">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9.25 lg:gap-16 items-start">

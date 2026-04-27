@@ -44,7 +44,7 @@ const Navbar = () => {
           className="hidden md2:flex items-center justify-center gap-2 px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.75 md:py-[13.5px] rounded-[10px] bg-gradient-horizontal text-background text-sm sm:text-base md:text-lg font-medium transition-transform active:scale-95"
         >
           <Image src="/assets/icons/Phone.svg" alt="Send" width={16} height={16} priority/>
-          Book a Call
+          Get Free Audit
         </Link>
 
         <button
@@ -79,7 +79,7 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
             >
               <Image src="/assets/icons/Phone.svg" alt="Send" width={18} height={18} priority />
-              Book a Call
+              Get Free Audit
             </Link>
           </li>
         </ul>

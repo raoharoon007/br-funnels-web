@@ -14,7 +14,7 @@ const Performance = () => {
             <div className="rounded-3xl mx-auto max-w-6xl bg-[linear-gradient(90deg,rgba(37,99,235,0.20)_0%,rgba(124,58,237,0.20)_50%,rgba(20,184,166,0.20)_100%)] p-6 sm:p-10 md:p-14.5 transition-all">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-[24px] font-semibold text-background sm:text-[32px]">Performance That Speaks for Itself!</h2>
-                    <p className="mt-3 text-sm text-primary font-normal sm:text-[18px]">Real metrics from real campaigns we've managed</p>
+                    <p className="mt-3 text-sm text-primary font-normal sm:text-[18px]">Real metrics from real campaigns — tracked, reported, and verified monthly</p>
                 </div>
 
                 <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
