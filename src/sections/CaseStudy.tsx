@@ -6,7 +6,7 @@ const caseStudies = [
         image: '/assets/images/casestudy1.webp',
         label: 'eCommerce',
         title: '+43% Email Revenue in 60 Days',
-        description: 'Rebuilt abandoned cart and post-purchase flows for a fashion retailer — turning one-time buyers into repeat customers.',
+        description: 'Rebuilt abandoned cart and post-purchase flows for a fashion retailer turning one-time buyers into repeat customers.',
         footer: 'Fashion Retailer — eCommerce',
         metric: '+43%',
     },
@@ -14,7 +14,7 @@ const caseStudies = [
         image: '/assets/images/casestudy2.webp',
         label: 'DTC',
         title: '3.8x ROI in First 90 Days',
-        description: 'Full Klaviyo setup from scratch — welcome series, flows, segmentation, and monthly campaigns for a DTC wellness brand.',
+        description: 'Full Klaviyo setup from scratch welcome series, flows, segmentation, and monthly campaigns for a DTC wellness brand.',
         footer: 'Wellness Brand — DTC',
         metric: '3.8x',
     },
@@ -23,7 +23,7 @@ const caseStudies = [
         label: 'DTC',
         title: '35% of Total Revenue From Email',
         description: 'Rebuilt retention system with SMS integration, post-purchase flows, and winback sequences.',
-        footer: 'Home & Living Brand — DTC',
+        footer: 'Home & Living Brand DTC',
         metric: '35%',
     },
 ];
@@ -60,7 +60,7 @@ const CaseStudy = () => {
                                 <h3 className="text-[20px] font-semibold text-background ">{study.title}</h3>
                                 <p className="text-sm font-normal max-w-80 text-primary">{study.description}</p>
                                 <div className="border-t-[0.88px] border-t-white/10 pt-3 text-sm flex items-center justify-between">
-                                    <span className='text-primary font-medium text-[12px]'>{study.footer}</span>
+                                    <span className='text-primary font-medium italic text-[12px]'>{study.footer}</span>
                                     <span className="text-gradient-main text-[12px] font-semibold flex flex-row gap-2 cursor-pointer">View Case Study <Image src="/assets/icons/purple-arrow.svg" alt="Arrow" width={20} height={20} /></span>
                                 </div>
                             </div>
